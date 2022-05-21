@@ -1,5 +1,7 @@
 # The Flutter Firebase Compendium Demo Application
 
+![The Flutter Firebase Compendium](res/firebase_compendium_logo.png)
+
 This is the companion app of the Flutter Firebase Compendium with code examples.
 
 The Flutter Firebase Compendium is an article series published on [Medium](https://medium.com/@xeladu/list/the-flutter-firebase-compendium-2ec07e25baba) and as an e-book (coming soon). It explains how to use Firebase services from a Flutter application.
