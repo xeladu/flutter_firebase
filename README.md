@@ -1,16 +1,37 @@
-# flutter_firebase
+# The Flutter Firebase Compendium Demo Application
 
-A new Flutter project.
+This is the companion app of the Flutter Firebase Compendium with code examples.
 
-## Getting Started
+The Flutter Firebase Compendium is an article series published on [Medium](https://medium.com/@xeladu/list/the-flutter-firebase-compendium-2ec07e25baba) and as an e-book (coming soon). It explains how to use Firebase services from a Flutter application.
 
-This project is a starting point for a Flutter application.
+## Content
 
-A few resources to get you started if this is your first Flutter project:
+🔹 [How to create a Firebase project and link it with your Flutter app](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356)
+🔹 [How to use Firebase Authentication with your Flutter app](todo)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## How to run the code
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The code uses Firebase as a backend but the Firebase configuration is not included. You have to add it yourself because there are paid features that might cause costs. Refer to the first article above on how the perform the necessary steps in detail.
+
+1. Create a Firebase project
+2. Install [Firebase CLI](https://firebase.google.com/docs/cli)
+3. Install [FlutterFire CLI](https://pub.dev/packages/flutterfire_cli)
+4. Check out the code
+5. Execute `firebase login` from the app root folder and log into your created Firebase project
+6. Execute `flutterfire configure` from the app root folder and use your created Firebase project
+7. A file `firebase_options.dart` will be created in your `lib` folder
+8. Run the app
+
+## Hints
+
+💡 Social sign-in only works on web platform
+
+## Support
+
+If you like this post or my work in general, feel free to support me in any way ❤
+
+- You can [become a Medium member](https://medium.com/@xeladu/membership) with my referral link for just $5 a month 💖
+- You can [buy me a coffee](https://www.buymeacoffee.com/xeladu) ☕
+- You can [donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=JPWK39GGPAAFQ) 🎁
+- You can [check out my freebies and curated lists](https://linktr.ee/xeladu) 📣
+- You can buy my e-book (coming soon) or visit my Gumroad store (coming soon) 📗
