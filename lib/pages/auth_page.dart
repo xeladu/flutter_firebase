@@ -28,13 +28,13 @@ class _AuthPageState extends State<AuthPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Firebase Auth")),
+      appBar: AppBar(title: const Center(child: Text("Firebase Auth"))),
       body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Stack(children: [
             ListView(children: [
               Card(
-                color: Colors.grey.shade200,
+                color: Colors.grey.shade300,
                 child: Column(children: [
                   Container(height: 10),
                   const Text("Email and password",
@@ -96,7 +96,7 @@ class _AuthPageState extends State<AuthPage> {
               ),
               Container(height: 10),
               Card(
-                color: Colors.grey.shade200,
+                color: Colors.grey.shade300,
                 child: Column(children: [
                   Container(height: 10),
                   const Text("Login with Google",
@@ -117,7 +117,7 @@ class _AuthPageState extends State<AuthPage> {
               ),
               Container(height: 10),
               Card(
-                color: Colors.grey.shade200,
+                color: Colors.grey.shade300,
                 child: Column(children: [
                   Container(height: 10),
                   const Text("Log out",
@@ -139,7 +139,7 @@ class _AuthPageState extends State<AuthPage> {
               Container(height: 10),
               if (_user != null)
                 Card(
-                    color: Colors.grey.shade200,
+                    color: Colors.grey.shade300,
                     child: Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Column(
