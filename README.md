@@ -10,7 +10,7 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 
 🔹 [How to create a Firebase project and link it with your Flutter app](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356)
 
-🔹 [How to use Firebase Authentication with your Flutter app](todo)
+🔹 [How to use Firebase Authentication with your Flutter app](https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156)
 
 ## How to run the code
 
