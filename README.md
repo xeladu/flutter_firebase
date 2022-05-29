@@ -12,6 +12,8 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 
 🔹 [How to use Firebase Authentication with your Flutter app](https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156)
 
+🔹 [How to use Firebase Cloud Firestore with a Flutter App](https://levelup.gitconnected.com/how-to-use-firebase-cloud-firestore-with-a-flutter-app-2110da689e08)
+
 ## How to run the code
 
 The code uses Firebase as a backend but the Firebase configuration is not included. You have to add it yourself because there are paid features that might cause costs. Refer to [this article](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356) above on how the perform the necessary steps in detail.
