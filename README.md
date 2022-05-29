@@ -16,7 +16,7 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 
 ## How to run the code
 
-The code uses Firebase as a backend but the Firebase configuration is not included. You have to add it yourself because there are paid features that might cause costs. Refer to [this article](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356) above on how the perform the necessary steps in detail.
+The code uses Firebase as a backend but the Firebase configuration is not included. You have to add it yourself because there are paid features that might cause costs. Refer to [this article](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356) above on how to perform the necessary steps in detail.
 
 1. Create a Firebase project
 2. Install [Firebase CLI](https://firebase.google.com/docs/cli)
