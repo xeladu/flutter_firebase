@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/pages/auth_page.dart';
 import 'package:flutter_firebase/pages/firestore_page.dart';
+import 'package:flutter_firebase/pages/functions_page.dart';
+import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 
 import 'firebase_options.dart';
 
@@ -37,16 +39,17 @@ class _State extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Center(child: Text("Firebase Demo"))),
+        bottomNavigationBar: const CustomBottomAppBar(),
         body: Center(
-            child: Column(children: [
+            child: ListView(children: [
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Card(
                 color: Colors.grey.shade300,
                 child: Image.asset("res/firebase_compendium_logo.png")),
           ),
-          SizedBox(
-              width: 200,
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -54,14 +57,23 @@ class _State extends State<HomePage> {
                   },
                   child: const Text("Authentication"))),
           Container(height: 10),
-          SizedBox(
-              width: 200,
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => const FirestorePage()));
                   },
                   child: const Text("Cloud Firestore"))),
+          Container(height: 10),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const FunctionsPage()));
+                  },
+                  child: const Text("Cloud Functions"))),
         ])));
   }
 }
