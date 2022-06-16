@@ -20,9 +20,9 @@ class _State extends State<FunctionsPage> {
       appBar: AppBar(title: const Center(child: Text("Firebase Functions"))),
       bottomNavigationBar: const CustomBottomAppBar(
           showGitHubLink: false,
-          showMediumLink: false,
+          showMediumLink: true,
           customMediumLink:
-              "https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156?sk=b0a7caf1e0316507e6e56af63c77cd49"),
+              "https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db"),
       body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Stack(children: [
@@ -103,7 +103,7 @@ class _State extends State<FunctionsPage> {
                                   content: Text("Please provide some text!")));
                         } else {
                           var resp = await Dio().post(
-                              "https://us-central1-dummy-fb52b.cloudfunctions.net/toLowerCase",
+                              "https://<server>-<projectId>.cloudfunctions.net/toLowerCase", // <-- replace with your link
                               options: Options(contentType: "text/plain"),
                               data: _lowerText);
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(

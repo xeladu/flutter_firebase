@@ -30,11 +30,11 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 8. Execute `firebase deploy --only functions` to deploy the demo functions
 9. Run the app
 
-## How to run cloud
-
 ## Hints
 
 💡 Social sign-in only works on web platform
+
+💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
 
 ## Support
 
