@@ -44,7 +44,7 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 
 Overview of supported platforms of the used [Firebase packages](https://firebase.google.com/docs/flutter/setup?platform=ios#add-plugins).
 
-✔ - supported ❌ - not supported ❓ - untested/unknown
+✔ - supported ❌ - not supported
 
 ||Android|iOS|Web|MacOS|Windows|Linux|
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
