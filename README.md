@@ -54,7 +54,7 @@ Overview of supported platforms of the used [Firebase packages](https://firebase
 
 ## Support
 
-If you like this post or my work in general, feel free to support me in any way ❤
+If you like this repository or my work in general, feel free to support me in any way ❤
 
 - You can [become a Medium member](https://medium.com/@xeladu/membership) with my referral link for just $5 a month 💖
 - You can [buy me a coffee](https://www.buymeacoffee.com/xeladu) ☕
