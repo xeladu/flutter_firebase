@@ -8,13 +8,10 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 
 ## Content
 
-🔹 [How to create a Firebase project and link it with your Flutter app](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356)
-
-🔹 [How to use Firebase Authentication with your Flutter app](https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156)
-
-🔹 [How to use Firebase Cloud Firestore with a Flutter app](https://levelup.gitconnected.com/how-to-use-firebase-cloud-firestore-with-a-flutter-app-2110da689e08)
-
-🔹 [How to work with Firebase Cloud Functions from a Flutter app](https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db)
+- 🔹 [Firebase project setup](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356)
+- 🔹 [Firebase Authentication](https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156)
+- 🔹 [Firebase Cloud Firestore](https://levelup.gitconnected.com/how-to-use-firebase-cloud-firestore-with-a-flutter-app-2110da689e08)
+- 🔹 [Firebase Cloud Functions](https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db)
 
 ## How to run the code
 
@@ -32,9 +29,8 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 
 ## Hints
 
-💡 Social sign-in only works on web platform
-
-💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
+- 💡 Social sign-in only works on web platform
+- 💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
 
 ## Support
 
