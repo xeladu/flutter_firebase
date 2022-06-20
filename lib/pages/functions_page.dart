@@ -1,6 +1,6 @@
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase/firebase/functions.dart';
 import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 
 class FunctionsPage extends StatefulWidget {
@@ -57,9 +57,8 @@ class _State extends State<FunctionsPage> {
                                 backgroundColor: Colors.red,
                                 content: Text("Please provide some text!")));
                       } else {
-                        var res = await FirebaseFunctions.instance
-                            .httpsCallable("toUpperCase")
-                            .call(_upperText);
+                        var res =
+                            await Functions.call("toUpperCase", _upperText);
 
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                             backgroundColor: Colors.green,
