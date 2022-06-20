@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase/pages/auth_page.dart';
 import 'package:flutter_firebase/pages/firestore_page.dart';
 import 'package:flutter_firebase/pages/functions_page.dart';
+import 'package:flutter_firebase/pages/storage_page.dart';
 import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 
 import 'firebase_options.dart';
@@ -74,6 +75,15 @@ class _State extends State<HomePage> {
                         builder: (context) => const FunctionsPage()));
                   },
                   child: const Text("Cloud Functions"))),
+          Container(height: 10),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const StoragePage()));
+                  },
+                  child: const Text("Storage"))),
         ])));
   }
 }

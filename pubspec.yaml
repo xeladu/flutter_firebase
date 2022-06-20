@@ -40,6 +40,8 @@ dependencies:
   url_launcher: ^6.1.2
   cloud_functions: ^3.2.16
   dio: ^4.0.6
+  firebase_storage: ^10.2.18
+  image_picker: ^0.8.5+3
 
 dev_dependencies:
   flutter_test:
