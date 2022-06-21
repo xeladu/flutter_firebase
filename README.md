@@ -39,6 +39,7 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 
 - 💡 Social sign-in only works on web platform
 - 💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
+- 💡 Don't forget to set the security rules for Storage and Firestore!
 
 ## Platforms
 
@@ -51,6 +52,7 @@ Overview of supported platforms of the used [Firebase packages](https://firebase
 |[Authentication](https://pub.dev/packages/firebase_auth)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[Firestore](https://pub.dev/packages/cloud_firestore)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[Functions](https://pub.dev/packages/cloud_functions)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
+|[Storage](https://pub.dev/packages/firebase_storage)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 
 ## Support
 
