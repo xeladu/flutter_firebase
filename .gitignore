@@ -47,3 +47,4 @@ app.*.map.json
 lib/firebase_options.dart
 .firebaserc
 firebase.json
+android/app/google-services.json
