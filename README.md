@@ -12,6 +12,7 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 - 🔹 [Firebase Authentication](https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156)
 - 🔹 [Firebase Cloud Firestore](https://levelup.gitconnected.com/how-to-use-firebase-cloud-firestore-with-a-flutter-app-2110da689e08)
 - 🔹 [Firebase Cloud Functions](https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db)
+- 🔹 [Firebase Storage](https://medium.com/gitconnected/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407)
 
 ## App screenshots
 
@@ -19,6 +20,9 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
   <img width="32%" alt="Firebase Authentication" src="res/auth.png" />
   <img width="32%" alt="Firebase Cloud Firestore" src="res/firestore.png" />
   <img width="32%" alt="Firebase Cloud Functions" src="res/functions.png" />
+</p>
+<p align="center">
+  <img width="32%" alt="Firebase Storage" src="res/storage.png" />
 </p>
 
 ## How to run the code
@@ -40,6 +44,7 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 - 💡 Social sign-in only works on web platform
 - 💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
 - 💡 Don't forget to set the security rules for Storage and Firestore!
+- 💡 To get file downloads from Firebase Storage work on the web platform, you need to set specific [CORS rules](https://firebase.google.com/docs/storage/web/download-files#cors_configuration)!
 
 ## Platforms
 
