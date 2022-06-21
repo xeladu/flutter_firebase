@@ -13,6 +13,9 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 - 🔹 [Firebase Cloud Firestore](https://levelup.gitconnected.com/how-to-use-firebase-cloud-firestore-with-a-flutter-app-2110da689e08)
 - 🔹 [Firebase Cloud Functions](https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db)
 - 🔹 [Firebase Storage](https://medium.com/gitconnected/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407)
+- 🔹 Firebase App Check (coming soon)
+- 🔹 Firebase Remote Config (coming soon)
+- 🔹 Firebase Dynamic Links (coming soon)
 
 ## App screenshots
 
