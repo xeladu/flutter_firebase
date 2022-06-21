@@ -25,9 +25,9 @@ class _State extends State<StoragePage> {
         appBar: AppBar(title: const Center(child: Text("Firebase Storage"))),
         bottomNavigationBar: const CustomBottomAppBar(
             showGitHubLink: false,
-            showMediumLink: false,
+            showMediumLink: true,
             customMediumLink:
-                "https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db"),
+                "https://levelup.gitconnected.com/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407"),
         body: Padding(
             padding: const EdgeInsets.all(10.0),
             child: ListView(children: [
