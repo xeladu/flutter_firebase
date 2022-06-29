@@ -70,4 +70,4 @@ If you like this repository or my work in general, feel free to support me in an
 - You can [buy me a coffee](https://www.buymeacoffee.com/xeladu) ☕
 - You can [donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=JPWK39GGPAAFQ) 🎁
 - You can [check out my freebies and curated lists](https://linktr.ee/xeladu) 📣
-- You can buy my e-book (coming soon) or visit my Gumroad store (coming soon) 📗
+- You can buy my e-book (coming soon) or visit [my Gumroad store](https://xeladu.gumroad.com/) 📗
