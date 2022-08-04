@@ -5,12 +5,14 @@ import 'package:flutter_firebase/pages/firestore_page.dart';
 import 'package:flutter_firebase/pages/functions_page.dart';
 import 'package:flutter_firebase/pages/storage_page.dart';
 import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
 
 import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await FirebaseAppCheck.instance.activate();
   runApp(const MyApp());
 }
 
