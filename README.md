@@ -40,7 +40,9 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 6. Execute `flutterfire configure` from the app root folder and use your created Firebase project
 7. A file `firebase_options.dart` will be created in your `lib` folder
 8. Execute `firebase deploy --only functions` to deploy the demo functions
-9. Run the app
+9. Set security rules for Storage and Firestore
+10. Register an attestation provider and enforce App Check
+11. Run the app
 
 ## Hints
 
@@ -48,6 +50,7 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 - 💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
 - 💡 Don't forget to set the security rules for Storage and Firestore!
 - 💡 To get file downloads from Firebase Storage work on the web platform, you need to set specific [CORS rules](https://firebase.google.com/docs/storage/web/download-files#cors_configuration)!
+- 💡 [The Play Integrity attestation provider is not working](https://github.com/firebase/flutterfire/issues/9178) at the moment. Use SafetyNet as replacement!
 
 ## Platforms
 
@@ -61,6 +64,7 @@ Overview of supported platforms of the used [Firebase packages](https://firebase
 |[Firestore](https://pub.dev/packages/cloud_firestore)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[Functions](https://pub.dev/packages/cloud_functions)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[Storage](https://pub.dev/packages/firebase_storage)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
+|[App Check](https://pub.dev/packages/firebase_app_check)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 
 ## Support
 
