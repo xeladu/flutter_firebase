@@ -14,7 +14,7 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 - 🔹 [Firebase Cloud Functions](https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db)
 - 🔹 [Firebase Storage](https://medium.com/gitconnected/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407)
 - 🔹 [Firebase App Check](https://levelup.gitconnected.com/how-to-secure-your-firebase-backend-access-with-app-check-for-flutter-apps-b54cbe777fb2?sk=b934d4a26b5d5a80dfabd94b0c76fad6)
-- 🔹 Firebase Remote Config (coming soon)
+- 🔹 [Firebase Remote Config](https://levelup.gitconnected.com/how-to-use-server-side-configurations-with-firebase-remote-config-3996b5606079)
 - 🔹 Firebase Dynamic Links (coming soon)
 
 ## App screenshots
@@ -26,6 +26,7 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 </p>
 <p align="center">
   <img width="32%" alt="Firebase Storage" src="res/storage.png" />
+  <img width="32%" alt="Firebase Remote Config" src="res/remote_config.png">
 </p>
 
 ## How to run the code
@@ -42,7 +43,8 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 8. Execute `firebase deploy --only functions` to deploy the demo functions
 9. Set security rules for Storage and Firestore
 10. Register an attestation provider and enforce App Check
-11. Run the app
+11. Create parameters with conditions for Remote Config
+12. Run the app
 
 ## Hints
 
@@ -65,6 +67,7 @@ Overview of supported platforms of the used [Firebase packages](https://firebase
 |[Functions](https://pub.dev/packages/cloud_functions)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[Storage](https://pub.dev/packages/firebase_storage)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[App Check](https://pub.dev/packages/firebase_app_check)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
+|[Remote Config](https://pub.dev/packages/firebase_remote_config)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 
 ## Support
 
