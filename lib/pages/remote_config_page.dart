@@ -30,9 +30,9 @@ class _State extends State<RemoteConfigPage> {
             AppBar(title: const Center(child: Text("Firebase Remote Config"))),
         bottomNavigationBar: const CustomBottomAppBar(
             showGitHubLink: false,
-            showMediumLink: false,
+            showMediumLink: true,
             customMediumLink:
-                "https://levelup.gitconnected.com/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407"),
+                "https://levelup.gitconnected.com/how-to-use-server-side-configurations-with-firebase-remote-config-3996b5606079"),
         body: Padding(
             padding: const EdgeInsets.all(10.0),
             child: Center(
