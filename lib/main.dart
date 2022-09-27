@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/pages/auth_page.dart';
 import 'package:flutter_firebase/pages/firestore_page.dart';
 import 'package:flutter_firebase/pages/functions_page.dart';
+import 'package:flutter_firebase/pages/remote_config_page.dart';
 import 'package:flutter_firebase/pages/storage_page.dart';
 import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
@@ -11,8 +13,19 @@ import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   await FirebaseAppCheck.instance.activate();
+
+  // do not use these durations in production as the server limit will be reached very quickly!
+  await FirebaseRemoteConfig.instance.setConfigSettings(RemoteConfigSettings(
+    fetchTimeout: const Duration(minutes: 1),
+    minimumFetchInterval: const Duration(minutes: 1),
+  ));
+  await FirebaseRemoteConfig.instance
+      .setDefaults(const {"platformString": "Hello!"});
+
   runApp(const MyApp());
 }
 
@@ -86,6 +99,15 @@ class _State extends State<HomePage> {
                         builder: (context) => const StoragePage()));
                   },
                   child: const Text("Storage"))),
+          Container(height: 10),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const RemoteConfigPage()));
+                  },
+                  child: const Text("Remote Config"))),
         ])));
   }
 }

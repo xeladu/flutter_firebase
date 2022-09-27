@@ -37,12 +37,14 @@ dependencies:
   cloud_firestore: ^3.4.3
   cloud_functions: ^3.3.3
   dio: ^4.0.6
+  firebase_analytics: ^9.3.6
   firebase_app_check: ^0.0.6+18
   firebase_auth: ^3.4.2
   firebase_core: ^1.20.0
+  firebase_remote_config: ^2.0.18
   firebase_storage: ^10.3.4
   image_picker: ^0.8.5+3
-  url_launcher: ^6.1.2
+  url_launcher: ^6.1.2  
 
 dev_dependencies:
   flutter_test:

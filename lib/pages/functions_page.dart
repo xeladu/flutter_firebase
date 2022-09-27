@@ -20,7 +20,7 @@ class _State extends State<FunctionsPage> {
       appBar: AppBar(title: const Center(child: Text("Firebase Storage"))),
       bottomNavigationBar: const CustomBottomAppBar(
           showGitHubLink: false,
-          showMediumLink: false,
+          showMediumLink: true,
           customMediumLink:
               "https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db"),
       body: Padding(
