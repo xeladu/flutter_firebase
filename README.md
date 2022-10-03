@@ -15,7 +15,6 @@ The Flutter Firebase Compendium is an article series published on [Medium](https
 - 🔹 [Firebase Storage](https://medium.com/gitconnected/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407)
 - 🔹 [Firebase App Check](https://levelup.gitconnected.com/how-to-secure-your-firebase-backend-access-with-app-check-for-flutter-apps-b54cbe777fb2?sk=b934d4a26b5d5a80dfabd94b0c76fad6)
 - 🔹 [Firebase Remote Config](https://levelup.gitconnected.com/how-to-use-server-side-configurations-with-firebase-remote-config-3996b5606079)
-- 🔹 Firebase Dynamic Links (coming soon)
 
 ## App screenshots
 
@@ -40,10 +39,10 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 5. Execute `firebase login` from the app root folder and log into your created Firebase project
 6. Execute `flutterfire configure` from the app root folder and use your created Firebase project
 7. A file `firebase_options.dart` will be created in your `lib` folder
-8. (Cloud Functions) Execute `firebase deploy --only functions` to deploy the demo functions
-9. (Storage and Cloud Firestore) Set security rules for Storage and Firestore
-10. (App Check) Register an attestation provider and enforce App Check
-11. (Remote Config) Create parameters with conditions for Remote Config
+8. (**Cloud Functions only**) Execute `firebase deploy --only functions` to deploy the demo functions
+9. (**Storage and Cloud Firestore only**) Set security rules for Storage and Firestore
+10. (**App Check only**) Register an attestation provider and enforce App Check
+11. (**Remote Config only**) Create parameters with conditions for Remote Config
 12. Run the app
 
 ## Hints
