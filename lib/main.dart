@@ -54,8 +54,7 @@ class _State extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar:
-            AppBar(title: const Center(child: Text("Flutter Firebase Demo"))),
+        appBar: AppBar(title: const Center(child: Text("Firebase Demo"))),
         bottomNavigationBar: const CustomBottomAppBar(),
         body: Center(
             child: ListView(children: [
