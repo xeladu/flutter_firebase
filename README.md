@@ -51,7 +51,7 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 - 💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
 - 💡 Don't forget to set the security rules for Storage and Firestore!
 - 💡 To get file downloads from Firebase Storage work on the web platform, you need to set specific [CORS rules](https://firebase.google.com/docs/storage/web/download-files#cors_configuration)!
-- 💡 [The Play Integrity attestation provider is not working](https://github.com/firebase/flutterfire/issues/9178) at the moment. Use SafetyNet as replacement!
+- 💡 [The Play Integrity attestation provider is not working](https://github.com/firebase/flutterfire/issues/9178) at the moment. Use SafetyNet as replacement! => [SafetyNet deprecated, supported until June 2024!](https://developer.android.com/training/safetynet/deprecation-timeline))
 
 ## Platforms
 
