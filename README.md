@@ -4,7 +4,9 @@
 
 This is the companion app of the Flutter Firebase Compendium with code examples.
 
-The Flutter Firebase Compendium is an article series published on [Medium](https://medium.com/@xeladu/list/the-flutter-firebase-compendium-2ec07e25baba) and as an e-book (coming soon). It explains how to use Firebase services from a Flutter application.
+The Flutter Firebase Compendium is an article series published on [Medium](https://medium.com/@xeladu/list/the-flutter-firebase-compendium-2ec07e25baba). It explains how to use Firebase services from a Flutter application.
+
+I recommend buying [my ebook](https://xeladu.gumroad.com/l/ffc). It contains a lot more details and will save you many hours of research time to develop your apps quicker.
 
 ## Content
 
@@ -77,4 +79,4 @@ If you like this repository or my work in general, feel free to support me in an
 - You can [buy me a coffee](https://www.buymeacoffee.com/xeladu) ☕
 - You can [donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=JPWK39GGPAAFQ) 🎁
 - You can [check out my freebies and curated lists](https://linktr.ee/xeladu) 📣
-- You can buy my e-book (coming soon) or visit [my Gumroad store](https://xeladu.gumroad.com/) 📗
+- You can buy [my ebook](https://xeladu.gumroad.com/l/ffc) or visit [my Gumroad store](https://xeladu.gumroad.com/) 📗
