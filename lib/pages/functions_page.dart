@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/firebase/functions.dart';
-import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 
 class FunctionsPage extends StatefulWidget {
   const FunctionsPage({Key? key}) : super(key: key);
@@ -17,12 +16,8 @@ class _State extends State<FunctionsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Center(child: Text("Firebase Storage"))),
-      bottomNavigationBar: const CustomBottomAppBar(
-          showGitHubLink: false,
-          showMediumLink: true,
-          customMediumLink:
-              "https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db"),
+      appBar:
+          AppBar(title: const Center(child: Text("Firebase Cloud Functions"))),
       body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: ListView(children: [

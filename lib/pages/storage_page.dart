@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/firebase/storage.dart';
-import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 import 'package:flutter_firebase/widgets/file_widget.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -23,11 +22,6 @@ class _State extends State<StoragePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Center(child: Text("Firebase Storage"))),
-        bottomNavigationBar: const CustomBottomAppBar(
-            showGitHubLink: false,
-            showMediumLink: true,
-            customMediumLink:
-                "https://levelup.gitconnected.com/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407"),
         body: Padding(
             padding: const EdgeInsets.all(10.0),
             child: ListView(children: [

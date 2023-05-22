@@ -8,6 +8,7 @@ import 'package:flutter_firebase/pages/remote_config_page.dart';
 import 'package:flutter_firebase/pages/storage_page.dart';
 import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'firebase_options.dart';
 
@@ -73,7 +74,7 @@ class _State extends State<HomePage> {
                         builder: (context) => const AuthPage()));
                   },
                   child: const Text("Authentication"))),
-          Container(height: 10),
+          const SizedBox(height: 10),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ElevatedButton(
@@ -82,7 +83,7 @@ class _State extends State<HomePage> {
                         builder: (context) => const FirestorePage()));
                   },
                   child: const Text("Cloud Firestore"))),
-          Container(height: 10),
+          const SizedBox(height: 10),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ElevatedButton(
@@ -91,7 +92,7 @@ class _State extends State<HomePage> {
                         builder: (context) => const FunctionsPage()));
                   },
                   child: const Text("Cloud Functions"))),
-          Container(height: 10),
+          const SizedBox(height: 10),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ElevatedButton(
@@ -100,7 +101,7 @@ class _State extends State<HomePage> {
                         builder: (context) => const StoragePage()));
                   },
                   child: const Text("Storage"))),
-          Container(height: 10),
+          const SizedBox(height: 10),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ElevatedButton(
@@ -109,6 +110,48 @@ class _State extends State<HomePage> {
                         builder: (context) => const RemoteConfigPage()));
                   },
                   child: const Text("Remote Config"))),
+          const SizedBox(height: 10),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Card(
+                  shadowColor: Colors.black,
+                  color: Colors.grey.shade200,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Center(
+                              child: Text("THE FLUTTER FIREBASE COMPENDIUM",
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold))),
+                          const SizedBox(height: 8),
+                          const Text("▶ Set up Firebase services in minutes",
+                              style: TextStyle(fontSize: 16)),
+                          const Text("▶ Build Flutter apps backed by Firebase",
+                              style: TextStyle(fontSize: 16)),
+                          const Text(
+                              "▶ Understand pros and cons of Firebase services",
+                              style: TextStyle(fontSize: 16)),
+                          const Text(
+                              "▶ Decide what Firebase features you should use",
+                              style: TextStyle(fontSize: 16)),
+                          const SizedBox(height: 8),
+                          Center(
+                            child: ActionChip(
+                                backgroundColor: Colors.lightBlue.shade200,
+                                avatar: const Icon(Icons.arrow_right_alt),
+                                onPressed: () async {
+                                  await launchUrl(
+                                      Uri.parse(
+                                          "https://xeladu.gumroad.com/l/ffc"),
+                                      mode: LaunchMode.externalApplication);
+                                },
+                                label: const Text("Get it on Gumroad!")),
+                          )
+                        ]),
+                  ))),
         ])));
   }
 }

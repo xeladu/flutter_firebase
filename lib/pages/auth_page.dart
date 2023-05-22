@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/firebase/auth.dart';
-import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 
 class AuthPage extends StatefulWidget {
   const AuthPage({Key? key}) : super(key: key);
@@ -30,10 +29,6 @@ class _State extends State<AuthPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Center(child: Text("Firebase Auth"))),
-      bottomNavigationBar: const CustomBottomAppBar(
-          showGitHubLink: false,
-          customMediumLink:
-              "https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156?sk=b0a7caf1e0316507e6e56af63c77cd49"),
       body: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Stack(children: [

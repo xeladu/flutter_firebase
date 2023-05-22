@@ -38,12 +38,11 @@ class CustomBottomAppBar extends StatelessWidget {
               if (showDonationLink)
                 ActionChip(
                     backgroundColor: Colors.blueGrey.shade200,
-                    avatar: const Icon(Icons.favorite, color: Colors.red),
-                    label: const Text("Donate"),
+                    avatar: const CircleAvatar(
+                        backgroundImage: AssetImage("res/quickcoder.png")),
+                    label: const Text("QuickCoder"),
                     onPressed: () async {
-                      await launchUrl(
-                          Uri.parse(
-                              "https://www.paypal.com/donate/?hosted_button_id=JPWK39GGPAAFQ"),
+                      await launchUrl(Uri.parse("https://quickcoder.org"),
                           mode: LaunchMode.externalApplication);
                     }),
               if (showGitHubLink)
