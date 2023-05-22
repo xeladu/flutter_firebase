@@ -42,11 +42,12 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 5. Execute `firebase login` from the app root folder and log into your created Firebase project
 6. Execute `flutterfire configure` from the app root folder and use your created Firebase project
 7. A file `firebase_options.dart` will be created in your `lib` folder
-8. (**Cloud Functions only**) Execute `firebase deploy --only functions` to deploy the demo functions. You might need to run `npm install` from inside the functions folder to make it work.
-9. (**Storage and Cloud Firestore only**) Set security rules for Storage and Firestore
-10. (**App Check only**) Register an attestation provider and enforce App Check
-11. (**Remote Config only**) Create parameters with conditions for Remote Config
-12. Run the app
+8. (**Authentication only**) Activate the sign-in providers Email/Password and Google
+9. (**Cloud Functions only**) Execute `firebase deploy --only functions` to deploy the demo functions. You might need to run `npm install` from inside the functions folder to make it work.
+10. (**Storage and Cloud Firestore only**) Set security rules for Storage and Firestore
+11. (**App Check only**) Register an attestation provider and enforce App Check
+12. (**Remote Config only**) Create parameters with conditions for Remote Config
+13. Run the app
 
 ## Hints
 
