@@ -6,7 +6,6 @@ import 'package:flutter_firebase/pages/firestore_page.dart';
 import 'package:flutter_firebase/pages/functions_page.dart';
 import 'package:flutter_firebase/pages/remote_config_page.dart';
 import 'package:flutter_firebase/pages/storage_page.dart';
-import 'package:flutter_firebase/widgets/custom_bottom_app_bar.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -57,7 +56,6 @@ class _State extends State<HomePage> {
     return Scaffold(
         appBar:
             AppBar(title: const Center(child: Text("Flutter Firebase Demo"))),
-        bottomNavigationBar: const CustomBottomAppBar(),
         body: Center(
             child: ListView(children: [
           Padding(
