@@ -96,7 +96,7 @@ class _State extends State<FunctionsPage> {
                                 content: Text("Please provide some text!")));
                       } else {
                         var resp = await Dio().post(
-                            "https://<server>-<projectId>.cloudfunctions.net/toLowerCase", // <-- replace with your link
+                            "https://tolowercase-ke7fnvzuna-uc.a.run.app", // <-- replace with your link
                             options: Options(contentType: "text/plain"),
                             data: _lowerText);
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(

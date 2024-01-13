@@ -1,9 +1,9 @@
-const functions = require("firebase-functions");
+const { onCall, onRequest } = require("firebase-functions/v2/https");
 
-exports.toUpperCase = functions.https.onCall((data, _) => {
-    return data.toString().toUpperCase();
+exports.toUpperCase = onCall((request) => {
+    return request.data.toUpperCase();
 });
 
-exports.toLowerCase = functions.https.onRequest((request, result) => {
+exports.toLowerCase = onRequest((request, result) => {
     result.status(200).send(request.body.toString().toLowerCase());
 });
