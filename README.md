@@ -4,24 +4,22 @@
 
 This is the companion app of the Flutter Firebase Compendium with code examples.
 
-The Flutter Firebase Compendium is an article series published on [Medium](https://medium.com/@xeladu/list/the-flutter-firebase-compendium-2ec07e25baba). It explains how to use Firebase services from a Flutter application.
-
-I recommend buying [my ebook](https://xeladu.gumroad.com/l/ffc). It contains a lot more details and will save you many hours of research time to develop your apps quicker.
+The Flutter Firebase Compendium is a detailled introduction for Flutter developers to work with Firebase. It explains how to use Firebase services from a Flutter application. Check out [my ebook](https://xeladu.gumroad.com/l/ffc) with many details that will save you many hours of research time to develop your apps quicker. You can learn more about it [here](https://flutter-firebase.quickcoder.org).
 
 ## Content
 
-- 🔹 [Firebase project setup](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356)
-- 🔹 [Firebase Authentication](https://levelup.gitconnected.com/how-to-use-firebase-authentication-with-your-flutter-app-4603c1b78156)
-- 🔹 [Firebase Cloud Firestore](https://levelup.gitconnected.com/how-to-use-firebase-cloud-firestore-with-a-flutter-app-2110da689e08)
-- 🔹 [Firebase Cloud Functions](https://levelup.gitconnected.com/how-to-work-with-firebase-cloud-functions-from-a-flutter-app-fb818c01b0db)
-- 🔹 [Firebase Storage](https://medium.com/gitconnected/how-to-easily-store-objects-in-firebase-storage-from-your-flutter-app-deabc475d407)
-- 🔹 [Firebase App Check](https://levelup.gitconnected.com/how-to-secure-your-firebase-backend-access-with-app-check-for-flutter-apps-b54cbe777fb2?sk=b934d4a26b5d5a80dfabd94b0c76fad6)
-- 🔹 [Firebase Remote Config](https://levelup.gitconnected.com/how-to-use-server-side-configurations-with-firebase-remote-config-3996b5606079)
-- 🔹 [Firebase Hosting](https://levelup.gitconnected.com/how-to-host-your-flutter-web-app-with-firebase-hosting-67d3e4657002)
+- 🔹 [Firebase project setup](https://quickcoder.org/firebase-flutter-setup/)
+- 🔹 [Firebase Authentication](https://quickcoder.org/firebase-auth/)
+- 🔹 [Firebase Cloud Firestore](https://quickcoder.org/firebase-firestore/)
+- 🔹 [Firebase Cloud Functions](https://quickcoder.org/firebase-functions/)
+- 🔹 [Firebase Storage](https://quickcoder.org/firebase-storage/)
+- 🔹 [Firebase App Check](https://quickcoder.org/firebase-app-check/)
+- 🔹 [Firebase Remote Config](https://quickcoder.org/firebase-remote-config/)
+- 🔹 [Firebase Hosting](https://quickcoder.org/firebase-hosting/)
 
 ## How to run the code
 
-The code uses Firebase as a backend but the Firebase configuration is not included. You have to add it yourself because there are paid features that might cause costs. Refer to [this article](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356) above on how to perform the necessary steps in detail.
+The code uses Firebase as a backend but the Firebase configuration is not included. You have to add it yourself because there are paid features that might cause costs. Refer to [this article](https://quickcoder.org/firebase-flutter-setup/) above on how to perform the necessary steps in detail.
 
 1. Create a Firebase project
 2. Install [Firebase CLI](https://firebase.google.com/docs/cli)
