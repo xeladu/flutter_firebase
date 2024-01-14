@@ -9,12 +9,11 @@ class FileWidget extends StatelessWidget {
   final Function() deleteFunction;
 
   const FileWidget(
-      {Key? key,
+      {super.key,
       required this.content,
       required this.fileName,
       required this.uploadDate,
-      required this.deleteFunction})
-      : super(key: key);
+      required this.deleteFunction});
 
   @override
   Widget build(BuildContext context) {

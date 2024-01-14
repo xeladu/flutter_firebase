@@ -7,7 +7,7 @@ import 'package:flutter_firebase/widgets/file_widget.dart';
 import 'package:image_picker/image_picker.dart';
 
 class StoragePage extends StatefulWidget {
-  const StoragePage({Key? key}) : super(key: key);
+  const StoragePage({super.key});
 
   @override
   State<StoragePage> createState() => _State();
@@ -70,10 +70,12 @@ class _State extends State<StoragePage> {
                                       }
                                     });
                                   } on FirebaseException catch (ex) {
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                        SnackBar(
-                                            backgroundColor: Colors.red,
-                                            content: Text(ex.message!)));
+                                    if (mounted) {
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(SnackBar(
+                                              backgroundColor: Colors.red,
+                                              content: Text(ex.message!)));
+                                    }
                                   }
                                 },
                           child: Text(_buttonCaption)),
@@ -139,8 +141,8 @@ class _State extends State<StoragePage> {
   }
 
   Future<XFile?> _pickImage() async {
-    final ImagePicker _picker = ImagePicker();
+    final ImagePicker picker = ImagePicker();
 
-    return await _picker.pickImage(source: ImageSource.gallery);
+    return await picker.pickImage(source: ImageSource.gallery);
   }
 }

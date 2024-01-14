@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase/firebase/functions.dart';
 
 class FunctionsPage extends StatefulWidget {
-  const FunctionsPage({Key? key}) : super(key: key);
+  const FunctionsPage({super.key});
 
   @override
   State<FunctionsPage> createState() => _State();
@@ -55,9 +55,11 @@ class _State extends State<FunctionsPage> {
                         var res =
                             await Functions.call("toUpperCase", _upperText);
 
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            backgroundColor: Colors.green,
-                            content: Text(res.data.toString())));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              backgroundColor: Colors.green,
+                              content: Text(res.data.toString())));
+                        }
                       }
                     },
                     child: const Text("Send to cloud function")),
@@ -96,16 +98,18 @@ class _State extends State<FunctionsPage> {
                                 content: Text("Please provide some text!")));
                       } else {
                         var resp = await Dio().post(
-                            "https://tolowercase-ke7fnvzuna-uc.a.run.app", // <-- replace with your link
+                            "https://<insert-link>", // <-- replace with your link
                             options: Options(contentType: "text/plain"),
                             data: _lowerText);
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            backgroundColor: resp.statusCode == 200
-                                ? Colors.green
-                                : Colors.red,
-                            content: Text(resp.statusCode == 200
-                                ? resp.data.toString()
-                                : resp.statusMessage!)));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              backgroundColor: resp.statusCode == 200
+                                  ? Colors.green
+                                  : Colors.red,
+                              content: Text(resp.statusCode == 200
+                                  ? resp.data.toString()
+                                  : resp.statusMessage!)));
+                        }
                       }
                     },
                     child: const Text("Send to HTTP endpoint")),

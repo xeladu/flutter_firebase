@@ -88,7 +88,7 @@ class Car {
       );
 
   Map<String, dynamic> toMap() => {
-        "engine": engine == null ? null : engine!.toMap(),
+        "engine": engine?.toMap(),
         "manufacturer": manufacturer,
         "price": price,
       };

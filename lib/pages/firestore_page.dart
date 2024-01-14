@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase/firebase/firestore.dart';
 
 class FirestorePage extends StatefulWidget {
-  const FirestorePage({Key? key}) : super(key: key);
+  const FirestorePage({super.key});
 
   @override
   State<FirestorePage> createState() => _State();
@@ -59,10 +59,12 @@ class _State extends State<FirestorePage> {
                         _dataToDisplay = await Firestore.getAllEntries("cars");
                         setState(() {});
 
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                                backgroundColor: Colors.green,
-                                content: Text("Dummy data added!")));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  backgroundColor: Colors.green,
+                                  content: Text("Dummy data added!")));
+                        }
                       },
                       icon: Icon(Icons.add,
                           color: Theme.of(context).colorScheme.secondary)),
@@ -80,10 +82,12 @@ class _State extends State<FirestorePage> {
                         _dataToDisplay = await Firestore.getAllEntries("cars");
                         setState(() {});
 
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                                backgroundColor: Colors.green,
-                                content: Text("All data deleted!")));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  backgroundColor: Colors.green,
+                                  content: Text("All data deleted!")));
+                        }
                       },
                       icon: Icon(Icons.delete,
                           color: Theme.of(context).colorScheme.secondary)),
@@ -96,10 +100,12 @@ class _State extends State<FirestorePage> {
                             await Firestore.getAllEntriesSortedByName("cars");
                         setState(() {});
 
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                                backgroundColor: Colors.green,
-                                content: Text("Data sorted by name")));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  backgroundColor: Colors.green,
+                                  content: Text("Data sorted by name")));
+                        }
                       },
                       icon: Icon(Icons.sort_by_alpha,
                           color: Theme.of(context).colorScheme.secondary)),
@@ -113,11 +119,13 @@ class _State extends State<FirestorePage> {
                                 "cars");
                         setState(() {});
 
-                        ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                                backgroundColor: Colors.green,
-                                content:
-                                    Text("Data filtered by price > 60000")));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  backgroundColor: Colors.green,
+                                  content:
+                                      Text("Data filtered by price > 60000")));
+                        }
                       },
                       icon: Icon(Icons.filter_alt,
                           color: Theme.of(context).colorScheme.secondary)),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase/firebase/auth.dart';
 
 class AuthPage extends StatefulWidget {
-  const AuthPage({Key? key}) : super(key: key);
+  const AuthPage({super.key});
 
   @override
   State<AuthPage> createState() => _State();
@@ -71,23 +71,27 @@ class _State extends State<AuthPage> {
                         ElevatedButton(
                             onPressed: () async {
                               var res = await Auth.mailRegister(_mail, _pwd);
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                      backgroundColor: res == null
-                                          ? Colors.green
-                                          : Colors.red,
-                                      content: Text(res ?? "Registered!")));
+                              if (mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                        backgroundColor: res == null
+                                            ? Colors.green
+                                            : Colors.red,
+                                        content: Text(res ?? "Registered!")));
+                              }
                             },
                             child: const Text("Register")),
                         ElevatedButton(
                             onPressed: () async {
                               var res = await Auth.mailSignIn(_mail, _pwd);
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                      backgroundColor: res == null
-                                          ? Colors.green
-                                          : Colors.red,
-                                      content: Text(res ?? "Logged in!")));
+                              if (mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                        backgroundColor: res == null
+                                            ? Colors.green
+                                            : Colors.red,
+                                        content: Text(res ?? "Logged in!")));
+                              }
                             },
                             child: const Text("Login"))
                       ]),
@@ -106,10 +110,12 @@ class _State extends State<AuthPage> {
                   ElevatedButton(
                       onPressed: () async {
                         var res = await Auth.googleSignIn();
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            backgroundColor:
-                                res == null ? Colors.green : Colors.red,
-                            content: Text(res ?? "Logged in!")));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              backgroundColor:
+                                  res == null ? Colors.green : Colors.red,
+                              content: Text(res ?? "Logged in!")));
+                        }
                       },
                       child: const Text("Login with Google")),
                   Container(height: 10)
@@ -127,10 +133,12 @@ class _State extends State<AuthPage> {
                   ElevatedButton(
                       onPressed: () async {
                         var res = await Auth.signOut();
-                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            backgroundColor:
-                                res == null ? Colors.green : Colors.red,
-                            content: Text(res ?? "Logged out!")));
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              backgroundColor:
+                                  res == null ? Colors.green : Colors.red,
+                              content: Text(res ?? "Logged out!")));
+                        }
                       },
                       child: const Text("Sign out")),
                   Container(height: 10)
