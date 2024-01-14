@@ -19,18 +19,6 @@ I recommend buying [my ebook](https://xeladu.gumroad.com/l/ffc). It contains a l
 - 🔹 [Firebase Remote Config](https://levelup.gitconnected.com/how-to-use-server-side-configurations-with-firebase-remote-config-3996b5606079)
 - 🔹 [Firebase Hosting](https://levelup.gitconnected.com/how-to-host-your-flutter-web-app-with-firebase-hosting-67d3e4657002)
 
-## App screenshots
-
-<p align="center">
-  <img width="32%" alt="Firebase Authentication" src="res/auth.png" />
-  <img width="32%" alt="Firebase Cloud Firestore" src="res/firestore.png" />
-  <img width="32%" alt="Firebase Cloud Functions" src="res/functions.png" />
-</p>
-<p align="center">
-  <img width="32%" alt="Firebase Storage" src="res/storage.png" />
-  <img width="32%" alt="Firebase Remote Config" src="res/remote_config.png">
-</p>
-
 ## How to run the code
 
 The code uses Firebase as a backend but the Firebase configuration is not included. You have to add it yourself because there are paid features that might cause costs. Refer to [this article](https://medium.com/gitconnected/how-to-create-a-firebase-project-and-link-it-with-your-flutter-app-acd826be8356) above on how to perform the necessary steps in detail.
@@ -55,7 +43,8 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 - 💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
 - 💡 Don't forget to set the security rules for Storage and Firestore!
 - 💡 To get file downloads from Firebase Storage work on the web platform, you need to set specific [CORS rules](https://firebase.google.com/docs/storage/web/download-files#cors_configuration)!
-- 💡 [SafetyNet deprecated, supported until June 2024!](https://developer.android.com/training/safetynet/deprecation-timeline))
+- 💡 [SafetyNet deprecated, supported until June 2024!](https://developer.android.com/training/safetynet/deprecation-timeline)
+- 💡 Play Integrity provider for Android only works for apps that are distributed via Google Play!
 
 ## Platforms
 
@@ -65,10 +54,10 @@ Overview of supported platforms of the used [Firebase packages](https://firebase
 
 ||Android|iOS|Web|MacOS|Windows|Linux|
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
-|[Authentication](https://pub.dev/packages/firebase_auth)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
-|[Firestore](https://pub.dev/packages/cloud_firestore)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
+|[Authentication](https://pub.dev/packages/firebase_auth)| ✔ | ✔ | ✔ | ✔ | ✔ | ❌ |
+|[Firestore](https://pub.dev/packages/cloud_firestore)| ✔ | ✔ | ✔ | ✔ | ✔ | ❌ |
 |[Functions](https://pub.dev/packages/cloud_functions)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
-|[Storage](https://pub.dev/packages/firebase_storage)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
+|[Storage](https://pub.dev/packages/firebase_storage)| ✔ | ✔ | ✔ | ✔ | ✔ | ❌ |
 |[App Check](https://pub.dev/packages/firebase_app_check)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[Remote Config](https://pub.dev/packages/firebase_remote_config)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 
