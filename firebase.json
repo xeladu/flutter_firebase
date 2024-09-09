@@ -1,1 +1,19 @@
-{"functions":{"source":"functions"},"hosting":{"public":"build/web","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]},"flutter":{"platforms":{"android":{"default":{"projectId":"crashlytics-demo-53232","appId":"1:128338828228:android:5e7739c8879aa3b4a02291","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"crashlytics-demo-53232","configurations":{"android":"1:128338828228:android:5e7739c8879aa3b4a02291","ios":"1:128338828228:ios:4c245fb664006628a02291","macos":"1:128338828228:ios:faca2a14e6ce1dc9a02291","web":"1:128338828228:web:3063d07e246725bca02291","windows":"1:128338828228:web:c75c27f025188eeca02291"}}}}}}
+{
+    "functions": {
+        "source": "functions"
+    },
+    "hosting": {
+        "public": "build/web",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "rewrites": [
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
+    }
+}
