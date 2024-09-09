@@ -59,7 +59,7 @@ class _State extends State<FirestorePage> {
                         _dataToDisplay = await Firestore.getAllEntries("cars");
                         setState(() {});
 
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
                                   backgroundColor: Colors.green,
@@ -82,7 +82,7 @@ class _State extends State<FirestorePage> {
                         _dataToDisplay = await Firestore.getAllEntries("cars");
                         setState(() {});
 
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
                                   backgroundColor: Colors.green,
@@ -100,7 +100,7 @@ class _State extends State<FirestorePage> {
                             await Firestore.getAllEntriesSortedByName("cars");
                         setState(() {});
 
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
                                   backgroundColor: Colors.green,
@@ -119,7 +119,7 @@ class _State extends State<FirestorePage> {
                                 "cars");
                         setState(() {});
 
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
                                   backgroundColor: Colors.green,

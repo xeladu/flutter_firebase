@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/pages/auth_page.dart';
+import 'package:flutter_firebase/pages/crashlytics_page.dart';
 import 'package:flutter_firebase/pages/firestore_page.dart';
 import 'package:flutter_firebase/pages/functions_page.dart';
 import 'package:flutter_firebase/pages/remote_config_page.dart';
@@ -37,7 +38,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+          primarySwatch: Colors.blue,
+          scaffoldBackgroundColor: Colors.white,
+          appBarTheme: const AppBarTheme(backgroundColor: Colors.white)),
       home: const HomePage(),
     );
   }
@@ -108,6 +112,15 @@ class _State extends State<HomePage> {
                         builder: (context) => const RemoteConfigPage()));
                   },
                   child: const Text("Remote Config"))),
+          const SizedBox(height: 10),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const CrashlyticsPage()));
+                  },
+                  child: const Text("Crashlytics"))),
           const SizedBox(height: 10),
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),

@@ -71,7 +71,7 @@ class _State extends State<AuthPage> {
                         ElevatedButton(
                             onPressed: () async {
                               var res = await Auth.mailRegister(_mail, _pwd);
-                              if (mounted) {
+                              if (context.mounted) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
                                         backgroundColor: res == null
@@ -84,7 +84,7 @@ class _State extends State<AuthPage> {
                         ElevatedButton(
                             onPressed: () async {
                               var res = await Auth.mailSignIn(_mail, _pwd);
-                              if (mounted) {
+                              if (context.mounted) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
                                         backgroundColor: res == null
@@ -110,7 +110,7 @@ class _State extends State<AuthPage> {
                   ElevatedButton(
                       onPressed: () async {
                         var res = await Auth.googleSignIn();
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               backgroundColor:
                                   res == null ? Colors.green : Colors.red,
@@ -133,7 +133,7 @@ class _State extends State<AuthPage> {
                   ElevatedButton(
                       onPressed: () async {
                         var res = await Auth.signOut();
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               backgroundColor:
                                   res == null ? Colors.green : Colors.red,

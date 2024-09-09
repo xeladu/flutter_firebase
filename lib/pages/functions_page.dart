@@ -55,7 +55,7 @@ class _State extends State<FunctionsPage> {
                         var res =
                             await Functions.call("toUpperCase", _upperText);
 
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               backgroundColor: Colors.green,
                               content: Text(res.data.toString())));
@@ -101,7 +101,7 @@ class _State extends State<FunctionsPage> {
                             "https://<insert-link>", // <-- replace with your link
                             options: Options(contentType: "text/plain"),
                             data: _lowerText);
-                        if (mounted) {
+                        if (context.mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               backgroundColor: resp.statusCode == 200
                                   ? Colors.green

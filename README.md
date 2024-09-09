@@ -8,14 +8,15 @@ The Flutter Firebase Compendium is a detailled introduction for Flutter develope
 
 ## Content
 
-- 🔹 [Firebase project setup](https://quickcoder.org/firebase-flutter-setup/)
-- 🔹 [Firebase Authentication](https://quickcoder.org/firebase-auth/)
-- 🔹 [Firebase Cloud Firestore](https://quickcoder.org/firebase-firestore/)
-- 🔹 [Firebase Cloud Functions](https://quickcoder.org/firebase-functions/)
-- 🔹 [Firebase Storage](https://quickcoder.org/firebase-storage/)
-- 🔹 [Firebase App Check](https://quickcoder.org/firebase-app-check/)
-- 🔹 [Firebase Remote Config](https://quickcoder.org/firebase-remote-config/)
-- 🔹 [Firebase Hosting](https://quickcoder.org/firebase-hosting/)
+- [Firebase project setup](https://quickcoder.org/firebase-flutter-setup/)
+- [Firebase Authentication](https://quickcoder.org/firebase-auth/)
+- [Firebase Cloud Firestore](https://quickcoder.org/firebase-firestore/)
+- [Firebase Cloud Functions](https://quickcoder.org/firebase-functions/)
+- [Firebase Storage](https://quickcoder.org/firebase-storage/)
+- [Firebase App Check](https://quickcoder.org/firebase-app-check/)
+- [Firebase Remote Config](https://quickcoder.org/firebase-remote-config/)
+- [Firebase Hosting](https://quickcoder.org/firebase-hosting/)
+- [Firebase Crashlytics](https://quickcoder.org/how-to-monitor-your-mobile-apps-with-firebase-crashlytics/)
 
 ## How to run the code
 
@@ -37,7 +38,7 @@ The code uses Firebase as a backend but the Firebase configuration is not includ
 
 ## Hints
 
-- 💡 Social sign-in only works on web platform
+- 💡 Social sign-ins only works on web platform without additional configurations
 - 💡 You need to replace the link on `functions_page.dart` according to your deployed function link!
 - 💡 Don't forget to set the security rules for Storage and Firestore!
 - 💡 To get file downloads from Firebase Storage work on the web platform, you need to set specific [CORS rules](https://firebase.google.com/docs/storage/web/download-files#cors_configuration)!
@@ -58,6 +59,7 @@ Overview of supported platforms of the used [Firebase packages](https://firebase
 |[Storage](https://pub.dev/packages/firebase_storage)| ✔ | ✔ | ✔ | ✔ | ✔ | ❌ |
 |[App Check](https://pub.dev/packages/firebase_app_check)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
 |[Remote Config](https://pub.dev/packages/firebase_remote_config)| ✔ | ✔ | ✔ | ✔ | ❌ | ❌ |
+|[Crashlytics](https://pub.dev/packages/firebase_crashlytics)| ✔ | ✔ | ❌ | ✔ | ❌ | ❌ |
 
 ## About me
 

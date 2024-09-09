@@ -70,7 +70,7 @@ class _State extends State<StoragePage> {
                                       }
                                     });
                                   } on FirebaseException catch (ex) {
-                                    if (mounted) {
+                                    if (context.mounted) {
                                       ScaffoldMessenger.of(context)
                                           .showSnackBar(SnackBar(
                                               backgroundColor: Colors.red,
